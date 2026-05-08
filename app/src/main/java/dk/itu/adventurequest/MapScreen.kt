@@ -3,7 +3,6 @@ package dk.itu.adventurequest
 import android.Manifest
 import android.annotation.SuppressLint
 import android.content.Intent
-import android.net.Uri
 import android.widget.Toast
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
@@ -155,8 +154,8 @@ fun AdventureQuestMap(navController: NavController) {
                                 // ask for GPS permissions if not yet available
                                 permissionLauncher.launch(
                                     arrayOf(
-                                        android.Manifest.permission.ACCESS_FINE_LOCATION,
-                                        android.Manifest.permission.ACCESS_COARSE_LOCATION
+                                        Manifest.permission.ACCESS_FINE_LOCATION,
+                                        Manifest.permission.ACCESS_COARSE_LOCATION
                                     )
                                 )
                             } else {

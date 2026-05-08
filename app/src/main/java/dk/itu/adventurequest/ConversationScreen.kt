@@ -32,7 +32,14 @@ fun ConversationScreen(navController: NavController, locationName: String?) {
             "What is a small victory you had this week?",
             "How do you usually manage your energy on days like today?",
             "What is your favorite memory of spending time outdoors?",
-            "What is one thing that made you smile recently?"
+            "What is one thing that made you smile recently?",
+            "If you could travel anywhere in the world tomorrow, where would you go?",
+            "Look around; what is the most beautiful or interesting thing you see right now?",
+            "What is a piece of advice that has really stayed with you over the years?",
+            "What’s a small 'life hack' or a new way of doing something that you’ve found surprisingly helpful lately?",
+            "When you think about the 'you' from ten years ago, what’s your favorite quality that has stayed exactly the same?",
+            "What is one way your friends or family have supported you recently that made you feel really understood?",
+            "What is one thing about your daily routine that brings you a strong sense of calm or control?"
         )
     }
 

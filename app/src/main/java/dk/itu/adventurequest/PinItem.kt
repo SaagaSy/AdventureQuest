@@ -8,7 +8,7 @@ class PinItem(
     val itemPosition: LatLng,
     val itemTitle: String,
     val itemSnippet: String,
-    val taskType: String    // what kind of task the discovery point has
+    val conversationStarter: String
 ) : ClusterItem {
     override fun getPosition(): LatLng = itemPosition
     override fun getTitle(): String = itemTitle
