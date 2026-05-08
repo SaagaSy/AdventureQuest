@@ -35,6 +35,7 @@ import androidx.navigation.NavController
 
 @Composable
 fun LandingScreen(navController: NavController) {
+    // stack from top to bottom:
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -59,9 +60,6 @@ fun LandingScreen(navController: NavController) {
         Column(verticalArrangement = Arrangement.spacedBy(20.dp)) {
             AccessibleButton(text = "Start Exploring (Map)") {
                 navController.navigate("map_screen")
-            }
-            AccessibleButton(text = "Community Progress") {
-                navController.navigate("community_screen")
             }
         }
     }

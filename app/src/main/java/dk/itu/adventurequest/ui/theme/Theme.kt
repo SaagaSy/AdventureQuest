@@ -31,8 +31,7 @@ private val LightColorScheme = lightColorScheme(
 @Composable
 fun AdventureQuestTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = true,
+    dynamicColor: Boolean = false, // don't override custom theme
     content: @Composable () -> Unit
 ) {
     val colorScheme = if (darkTheme) DarkColorScheme else LightColorScheme
