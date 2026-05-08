@@ -59,7 +59,7 @@ fun ConversationScreen(navController: NavController, locationName: String?) {
             fontSize = 22.sp,
             lineHeight = 30.sp,
             fontWeight = FontWeight.Medium,
-            color = MaterialTheme.colorScheme.primary,
+            color = MaterialTheme.colorScheme.secondary,
             textAlign = TextAlign.Center
         )
 
@@ -67,13 +67,13 @@ fun ConversationScreen(navController: NavController, locationName: String?) {
 
         Card(
             modifier = Modifier.fillMaxWidth(),
-            colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant,
-                contentColor = MaterialTheme.colorScheme.onSurfaceVariant),
+            colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface,
+                contentColor = MaterialTheme.colorScheme.primary),
             border = BorderStroke(2.dp, MaterialTheme.colorScheme.primary), // High-contrast border
             shape = RoundedCornerShape(16.dp)
         ) {
             Text(
-                text = "\"$currentTopic\"",
+                text = currentTopic,
                 fontSize = 22.sp,
                 lineHeight = 36.sp,
                 fontWeight = FontWeight.Bold,
@@ -91,7 +91,7 @@ fun ConversationScreen(navController: NavController, locationName: String?) {
             shape = RoundedCornerShape(16.dp),
             colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
         ) {
-            Text("Finish & return to map", fontSize = 24.sp, fontWeight = FontWeight.ExtraBold)
+            Text("Finish & Return to Map", fontSize = 24.sp, fontWeight = FontWeight.ExtraBold)
         }
     }
 }
